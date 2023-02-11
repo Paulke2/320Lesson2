@@ -21,6 +21,15 @@ class TestLast(unittest.TestCase):
 
         self.assertEqual(actual,"25")
 
+    def test_zero(self):
+        actual = answer.addNums(["5\n", "-999\n", "20\n", "-2\n", "-2\n", "3\n", "-4\n"])
+
+        self.assertEqual(actual, "0")
+
+    def test_all_negatives(self):
+        actual = answer.addNums(["5\n", "-2\n", "-20\n", "-2\n", "-2\n", "-3\n", "-999\n"])
+
+        self.assertEqual(actual, "0")
 
     #testing sumNums
     def test_sumNums(self):
