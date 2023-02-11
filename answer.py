@@ -14,10 +14,10 @@ def addNums(lines:list[int]):
 
 
     # if the first line that indicates the total nums is 0, the list is empty
-    if lines[0]==0:
+    if len(lines) ==0:
         return "EMPTY"
 
-    add= sumNums(lines)
+    add= sumNums(lines[1:])
     return add
 
 
