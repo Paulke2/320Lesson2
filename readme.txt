@@ -7,7 +7,9 @@ first index as the first index just specifies the length and is not apart of the
 sumNums has an int variable that represents the total count of the data. then there is a for loop that \
 loops through or data, and if -999 is encountered, which represents the end of our data, we break out of
 the loop and return the total. else, each index greater than 0, will be added to total and once the
-end of the array is reached, total will be returned
+end of the array is reached, total will be returned. once control is returned to main, if the total is
+0, indicating no suitable  values were given, EMPTY is printed, else, the count of valid values is
+printed.
 
 Run time:
 Worst case is O(N)

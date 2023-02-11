@@ -26,6 +26,11 @@ if __name__ == "__main__":
     with open(filename) as data_file:
         lines: list[str]
         lines = data_file.readlines()
-        print(addNums(lines))
+        total=addNums(lines)
+        if(total==0):
+            print("EMPTY")
+
+        else:
+            print(total)
         # Actually do the work
 
