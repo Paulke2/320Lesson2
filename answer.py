@@ -1,12 +1,12 @@
 
 
 
-def sumNums(numbers:[int]):
+def sumNums(numbers:[int])->int:
     total:int=0
     for num in numbers:
         if(int(num)==-999):
             break;
-        if(int(num)>=0):
+        elif(int(num)>=0):
             total=total+int(num)
     return total
 
@@ -17,7 +17,7 @@ def addNums(lines:list[int]):
     if len(lines) ==0:
         return "EMPTY"
 
-    add= sumNums(lines[1:])
+    add:int = sumNums(lines[1:])
     return add
 
 
