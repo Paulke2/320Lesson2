@@ -27,7 +27,7 @@ if __name__ == "__main__":
         lines: list[str]
         lines = data_file.readlines()
         total=addNums(lines)
-        if(total==0):
+        if(total=="0"):
             print("EMPTY")
 
         else:
