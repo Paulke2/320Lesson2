@@ -10,15 +10,15 @@ def sumNums(numbers:[int])->int:
             total=total+int(num)
     return total
 
-def addNums(lines:list[int]):
+def addNums(lines:list[int])->str:
 
 
     # if the first line that indicates the total nums is 0, the list is empty
     if len(lines) ==0:
         return "EMPTY"
 
-    add:int = sumNums(lines[1:])
-    return add
+    Total_count:int = sumNums(lines[1:])
+    return str(Total_count)
 
 
 if __name__ == "__main__":
