@@ -26,6 +26,6 @@ if __name__ == "__main__":
     with open(filename) as data_file:
         lines: list[str]
         lines = data_file.readlines()
-        addNums(lines)
+        print(addNums(lines))
         # Actually do the work
 
